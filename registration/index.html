@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Registration Page - Student Version</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Page</h2>
+
+    <!-- Simple form like a student might create -->
+    <form id="regForm" novalidate>
+      <div class="form-row">
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="firstName" type="text" placeholder="Enter first name" />
+        <div id="firstNameError" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="lastName" type="text" placeholder="Enter last name" />
+        <div id="lastNameError" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter password" />
+        <div id="passwordError" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="email">E-mail id</label>
+        <input id="email" name="email" type="email" placeholder="name@domain.com" />
+        <div id="emailError" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="phone">Mobile Number</label>
+        <input id="phone" name="phone" type="text" placeholder="10 digit mobile number" />
+        <div id="phoneError" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter address"></textarea>
+        <div id="addressError" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="form-actions">
+        <button id="submitBtn" type="submit">Register</button>
+      </div>
+
+      <div id="formMessage" class="success" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
