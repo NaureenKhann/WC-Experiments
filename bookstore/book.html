@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm px-5">
+    <a class="navbar-brand fw-bold text-success fs-3" href="#">Story Corner 📕</a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav me-4">
+        <li class="nav-item"><a class="nav-link text-success fw-semibold" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-success fw-semibold" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link text-success fw-semibold" href="#">Contact Us</a></li>
+      </ul>
+      <button class="btn btn-success fw-bold me-3">Sign In</button>
+      <img src="shopping-cart.png" alt="Cart" width="35">
+    </div>
+  </nav>
+
+  <!-- Search Section -->
+  <div class="text-center my-5">
+    <h2 class="text-primary fw-bold mb-3">Find Your Next Read</h2>
+    <div class="d-flex justify-content-center">
+      <input type="text" class="form-control w-25 me-2" id="place" placeholder="Search for books...">
+      <button class="btn btn-primary fw-bold" id="srch">Search</button>
+    </div>
+  </div>
+
+  <!-- Book Grid -->
+  <div class="container mb-5">
+    <div class="row g-4">
+
+      <!-- Book 1 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book1.jpg" class="card-img-top" alt="The Hobbit">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">The Hobbit</h5>
+            <p>Author: J.R.R. Tolkien</p>
+            <p class="text-success fw-semibold">$100.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book2.jpg" class="card-img-top" alt="The Secret Garden">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">The Secret Garden</h5>
+            <p>Author: Jane Eyer</p>
+            <p class="text-success fw-semibold">$150.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book3.jpg" class="card-img-top" alt="Dream of Ruins">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Dream of Ruins</h5>
+            <p>Author: Albert Rodrigues</p>
+            <p class="text-success fw-semibold">$200.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book4.jpg" class="card-img-top" alt="The Wizard of Oz">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">The Wizard of Oz</h5>
+            <p>Author: Christopher Columbus</p>
+            <p class="text-success fw-semibold">$200.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 5 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book5.jpg" class="card-img-top" alt="Time">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Time</h5>
+            <p>Author: Alice Fernandes</p>
+            <p class="text-success fw-semibold">$120.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 6 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book6.jpg" class="card-img-top" alt="More Miracle than Bird">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">More Miracle than Bird</h5>
+            <p>Author: Helen Keller</p>
+            <p class="text-success fw-semibold">$180.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 7 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book7.jpg" class="card-img-top" alt="Clap When You Land">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Clap When You Land</h5>
+            <p>Author: Elizabeth Acevedo</p>
+            <p class="text-success fw-semibold">$220.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 8 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book8.jpg" class="card-img-top" alt="Princess the Cat vs Snarl">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Princess the Cat vs Snarl</h5>
+            <p>Author: John Heaton</p>
+            <p class="text-success fw-semibold">$100.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 9 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book9.jpg" class="card-img-top" alt="Really Good Actually">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Really Good Actually</h5>
+            <p>Author: Monica Heisey</p>
+            <p class="text-success fw-semibold">$140.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 10 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book10.jpg" class="card-img-top" alt="Wicked Like a Wildfire">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Wicked Like a Wildfire</h5>
+            <p>Author: Lana Vivik</p>
+            <p class="text-success fw-semibold">$160.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 11 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book11.jpg" class="card-img-top" alt="Thread">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Thread</h5>
+            <p>Author: Augustus Wordsworth</p>
+            <p class="text-success fw-semibold">$250.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 12 -->
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100 text-center">
+          <img src="book12.jpg" class="card-img-top" alt="Alice in Wonderland">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Alice in Wonderland</h5>
+            <p>Author: Jeni Conrad</p>
+            <p class="text-success fw-semibold">$200.00</p>
+            <button class="btn btn-info text-white fw-bold">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
