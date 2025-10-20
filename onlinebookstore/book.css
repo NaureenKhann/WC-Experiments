@@ -1,0 +1,31 @@
+body {
+  background-color: #f4f6f8;
+  font-family: "Poppins", sans-serif;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body h5 {
+  color: #2f3640;
+}
+
+.btn-info {
+  background-color: #1a9ada;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #24a72b;
+  color: #fff;
+}
+
+.navbar a.nav-link:hover {
+  background-color: #24a72b;
+  color: white !important;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
