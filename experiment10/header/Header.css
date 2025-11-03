@@ -1,0 +1,99 @@
+.header {
+    height: 38vw;
+    width: 100%;
+    margin: 10px auto 45px auto;
+    position: relative;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    overflow: hidden;
+    background: 
+         linear-gradient(to right, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
+        url('../../assets/frontend_assets/back5.png') no-repeat center right / contain; /* subtle orange tint */
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(249, 115, 22, 0.15); /* light orange overlay */
+    z-index: 1;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    max-width: 40vw;
+    bottom: 10%;
+    left: 8vw;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header-contents h2 {
+    color: tomato;
+    font-weight: 700;
+    font-size: max(4vw, 32px);
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.header-contents p {
+    color: #374151;
+    font-weight: 500;
+    font-size: max(1.2vw, 16px);
+    margin: 0 0 12px 0;
+}
+
+.header-contents button {
+    padding: 15px 15px;
+    background: #F97316; /* PlateUp orange */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.25);
+    transition: all 0.2s ease;
+    width: 250px;
+}
+
+.header-contents button:hover {
+    background: #EA580C; /* darker orange hover */
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tablet */
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 50%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 750px) {
+    .header {
+        height: 55vw;
+        background: 
+            url('../../assets/frontend_assets/back5.png') no-repeat center top / cover;
+        border-radius: 16px;
+        background-color:rgba(255,255,255,0.85);
+    }
+    .header-contents {
+        max-width: 65%;
+    }
+    .header-contents p {
+        display: none;
+    }
+    .header-contents button {
+        padding: 2vw 4vw;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,108 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar .logo{
+    width: 150px;
+    height: auto;
+}
+.navbar-menu{
+    display: flex;
+    gap: 30px;  
+    list-style: none;
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-right button{
+    font-size: 23px;
+    margin-left: 12px;
+}
+.navbar button{
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color: rgb(20, 112, 20);
+    cursor: pointer;
+}
+.search{
+    height: 40px;
+    cursor: pointer;
+}
+.basket{
+    height: 40px;
+    cursor: pointer;
+}
+.navbar-menu a{
+    font-size: 23px;
+    margin-right: 70px;
+}
+
+.navbar .active{
+    color: tomato;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+.navbar-menu li:hover{
+    cursor: pointer;
+    color: tomato;
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+@media (max-width: 900px) {
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 750px) {
+    .navbar-menu{
+        display: none;
+    }
+}
