@@ -1,0 +1,189 @@
+.cart {
+  margin-top: 100px;
+  padding: 40px 5%;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cartitems-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  font-weight: 600;
+  color: #333;
+  font-size: max(1vw, 14px);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cartitems-item {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+  color: #444;
+  transition: background 0.3s ease;
+}
+
+.cartitems-item:hover {
+  background: rgba(244, 243, 243, 0.959);
+}
+
+.cartitems-item .food {
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cartitems-item img {
+  width: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  
+}
+
+.cartitems-item img:hover {
+  transform: scale(1.1);
+}
+
+.cart hr {
+  border: none;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 10px 0;
+}
+
+/* Bottom Section Layout */
+.cartbottom {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cart Totals Box */
+.carttotal {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.carttotal h2 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.cartdetail {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 15px;
+}
+
+.carttotal hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+.carttotal button {
+  margin-top: 20px;
+  border: none;
+  background: linear-gradient(135deg, #ff6347, #ff8566);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.carttotal button:hover {
+  background: linear-gradient(135deg, #ff8261, #ff9a7d);
+  transform: translateY(-2px);
+}
+
+/* Promo Code Box */
+.cartpromo {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 30px;
+  color: #333;
+  margin-top: 40px;
+}
+
+.cartpromo p {
+  font-size: 15px;
+  color: #555;
+}
+
+.promoinput {
+  margin-top: 15px;
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.promoinput input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 12px 15px;
+  font-size: 15px;
+}
+
+.promoinput button {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.promoinput button:hover {
+  background: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .cartbottom {
+    flex-direction: column;
+  }
+
+  .carttotal, .cartpromo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cartitems-title {
+    display: none;
+  }
+
+  .cartitems-item {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 10px;
+  }
+
+  .cartitems-item .food {
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+}
